@@ -1,0 +1,121 @@
+/*-----------------------------------------
+      GENERAL
+-----------------------------------------*/
+
+:root {
+  /* Breakpoints */
+  --xs: 360px;
+  --sm: 576px;
+  --md: 768px;
+  --lg: 992px;
+  --xl: 1200px;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  /* Scrollbar Mozilla */
+  overflow-y: scroll;
+  scrollbar-color: var(--dorado-50) var(--gris-50);
+  scrollbar-width: thin;
+}
+
+/* Scrollbar Chrome */
+html::-webkit-scrollbar {
+  width: 7px;
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--dorado-50);
+}
+
+::selection {
+  background: var(--dorado);
+  color: #fff;
+}
+
+*,*:after,*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  overflow: hidden;
+  background-image: url(../img/bg-dots.svg);
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  all: unset;
+}
+
+hr {
+  margin: 10rem auto;
+  width: 50%;
+  border: 1px solid #DDD;
+}
+
+li {
+  list-style: none;
+}
+
+.fixed-bottom,.fixed-top{
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030
+}
+
+.fixed-top{
+  top: 0;
+}
+
+.fixed-bottom {
+  bottom: 0;
+}
+
+.contenedor {
+  max-width: 100%;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-bottom: 1px;
+  /* box-shadow:  */
+  /* -moz-box-shadow:; */
+  /* -webkit-box-shadow:; */
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*-----------------------------------------
+      WHATSAPP BUTTON
+-----------------------------------------*/
+
+.wp-root {
+  position: fixed;
+  left: 2rem;
+  bottom: 2.2rem;
+  z-index: 2;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, .1);
+  transition: .2s;
+}
+
+.wp-root:hover {
+  box-shadow: 2px 2px 15px 8px rgba(0, 0, 0, .15);
+}
+
+.wp-root .whatsapp-icon {
+  width: 6rem;
+  height: auto;
+}

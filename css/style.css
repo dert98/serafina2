@@ -1,0 +1,18 @@
+/*-----------------------------------------
+      GLOBAL
+-----------------------------------------*/
+
+@charset "UTF-8";
+
+@import 'fonts.css';
+@import 'colors.css';
+@import 'general.css';
+@import 'preloader.css';
+@import 'navbar.css';
+@import 'home.css';
+@import 'especialidades.css';
+@import 'menu.css';
+@import 'instagram.css';
+@import 'redes.css';
+@import 'footer.css';
+

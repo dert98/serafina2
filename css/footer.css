@@ -1,0 +1,138 @@
+/*-----------------------------------------
+      FOOTER
+-----------------------------------------*/
+
+footer {
+  background: #232323;
+  color: #CCC !important;
+  font-family: "Open Sans",sans-serif !important;
+  font-size: 1.2rem;
+  font-weight: 300;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "links" "blog" "direcciones" "instagram";
+  padding: 0rem 5rem;
+}
+
+footer h6 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #FFF;
+  letter-spacing: 0.1em;
+  padding-bottom: 3rem;
+  text-align: left;
+  text-transform: uppercase;;
+}
+
+footer i {
+  color: var(--dorado);
+  font-size: 1.4rem;
+  width: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    grid-template-areas: "links blog direcciones instagram";
+  }
+}
+  
+/* footer:before {
+  content: "";
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+  height: 10rem;
+  transform: translateY(-10rem);
+  background-image: url(../img/chocolate.png);
+  background-repeat: repeat-x;
+} */
+
+/* Links en footer */
+
+footer .footer-links {
+  grid-area: links;
+  padding: 2rem 2rem;
+}
+
+footer .footer-links .footer-logo {
+  display: none;
+}
+
+footer .footer-links .footer-logo img {
+  width: 30%;
+}
+
+footer .footer-links ul li {
+  text-align: left;
+  padding: 0.5rem 0px;
+  cursor: pointer;
+}
+
+footer .footer-links ul li i {
+  font-size: 1.4rem;
+  width: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+  footer .footer-links .footer-logo {
+    display: block;
+  }
+
+}
+
+/* Blog en footer */
+
+footer .blog {
+  grid-area: blog;
+  padding: 2rem 2rem;
+}
+
+footer .blog p {
+  text-align: left;
+  padding: 0.5rem 0px;
+}
+
+/* Direcciones en footer */
+
+footer .footer-direcciones {
+  grid-area: direcciones;
+  padding: 2rem 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer .footer-direcciones p {
+  text-align: left;
+  padding: 0.5rem 0px;
+}
+
+footer .footer-direcciones .mapa_contenedor {
+  padding: 2rem 0;
+  text-align: left;
+}
+
+/* footer .footer-direcciones .mapa_contenedor .mapa {
+  width: 100%;
+  max-width: 50rem;
+} */
+
+#map {
+  height: 100%;
+}
+
+
+/* Desarrollador en footer */
+
+.drei {
+  font-size: 1.3rem;
+  background: #111;
+  color: var(--blanco);
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.drei a {
+  margin-left: 0.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}

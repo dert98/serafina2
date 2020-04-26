@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Stay Classy SLDT';
+    /* src: local("Stay Classy SLDT"), local("StayClassySLDT"); */
+    src: url(../fonts/Stay_Classy_SLDT/StayClassySLDT.ttf)
+}
+
+@font-face {
+    font-family: 'Clicker Script', cursive;
+    /* src: local("ClickerScript-Regular"), local("ClickerScript"); */
+    src: url('https://fonts.googleapis.com/css?family=Clicker+Script&display=swap');
+    src: url(../fonts/Clicker_Script/ClickerScript-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Source Sans Pro', sans-serif;
+    /* src: local("Source Sans Pro"), local("SourceSansPro"); */
+    src: url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+    src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Open Sans', sans-serif;
+    /* src: local("Open Sans"), local("OpenSans"); */
+    src: url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap');
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf)
+}
+
+
+
+/* @font-face {
+    font-family: 'PT Serif Caption', serif;
+    src: local("PT Serif Caption"), local("PTSerifCaption");
+    src: url('https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400i&display=swap');
+    src: url(../fonts/PT_Serif_Caption/PTSerifCaption-Regular.ttf)
+} */

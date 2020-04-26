@@ -1,0 +1,215 @@
+/*-----------------------------------------
+      NAVBAR
+-----------------------------------------*/
+
+.destacado {
+  width: 100%;
+  height: 35px;
+  background-color: #FF99BB;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+nav .logo {
+  font-family: 'Stay Classy SLDT';
+  color: var(--dorado);
+  font-size: 35px;
+  position: fixed;
+  top: 0.2rem;
+  margin-top: -0.7rem;
+  margin-left: 43vw;
+  text-align: center;
+  opacity: 0;
+  transition: .5s;
+}
+
+nav.down .logo {
+  opacity: 1;
+}
+
+.nav-menu a {
+  cursor: pointer;
+}
+
+nav .nav-icon .fa {
+  font-size: 2rem;
+}
+
+nav ul {  
+  overflow: hidden;
+  text-align: right;
+  margin: 0;
+  transition: 1s;
+  padding: 0 10%;
+  background: #FFF;
+  max-height: 0px;
+}
+
+.showing {
+  max-height: 100vh;
+}
+
+.nav-white {
+  background: #FFF !important;
+}
+
+nav.down ul {
+  background: #FFF;
+  color: var(--dorado);
+  box-shadow: 0px 15px 10px -15px #DDD;
+}
+
+nav.down ul li a {
+  color: var(--dorado);
+}
+
+/* nav.down ul::after {
+  content: "";
+    display: block;
+  height: 0;
+  background-image: url(../img/onda.svg);
+  background-repeat: repeat-x;
+} */
+
+nav.down .nav-icon {
+  background: #FFF;
+  box-shadow: 0px 15px 10px -15px #DDD;
+}
+
+nav ul li {
+  width: 100%;
+  padding: 24px 0;
+  text-align: center;
+  float: none; 
+}
+
+@media (min-width: 992px) {
+  nav .logo {
+    position: absolute;
+    margin-top: -0.3rem;
+    transform: translateX(50%);
+  }
+
+  nav ul {
+    background: transparent;
+    max-height: min-content;
+  }
+
+  nav ul li {
+    width: auto;
+    display: inline-block;
+    padding: 2rem;
+    float: none;
+  }
+
+  nav ul li:nth-child(1) {
+    float: left;
+  }
+  nav ul li:nth-child(2) {
+    float: left;
+  }
+  nav ul li:nth-child(3) {
+    float: left;
+  }
+
+  nav .nav-icon {
+    display: none;
+  }
+  
+}
+
+nav ul li a {
+  color: var(--dorado);
+  font-size: 20px;
+}
+
+nav .nav-icon {
+  height: 50px;
+  width: 100%;
+  background: transparent;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 17px 20px;
+  cursor: pointer;
+  color: var(--dorado);
+  box-shadow: none;
+}
+
+  
+  
+/*-----------------------------------------
+      ICON HAMBURGUER
+-----------------------------------------*/
+
+#nav-icon1{
+  width: 25px;
+  height: auto;
+  position: relative;
+  margin: 0 0 0 auto;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+
+#nav-icon1 span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: var(--dorado);
+  border-radius: 20%;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) { top: 0px; }
+
+#nav-icon1 span:nth-child(2) { top: 7px; }
+
+#nav-icon1 span:nth-child(3) { top: 14px; }
+
+#nav-icon1.open span:nth-child(1) {
+  top: 7px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -30px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+  top: 7px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+

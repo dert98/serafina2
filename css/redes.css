@@ -1,0 +1,55 @@
+/*-----------------------------------------
+      REDES
+-----------------------------------------*/
+
+.redes {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    height: 40vh;
+    width: 70%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+  }
+  
+  .redes h1 {
+    grid-column: 1 / 5;
+    font-family: 'Clicker Script', cursive;
+    font-size: 4rem;
+    color: var(--dorado);
+    margin: auto;
+  }
+  
+  .redes .icon-item {
+    grid-column: span 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .redes .icon-link {
+    display: flex;
+    font-size: 3.6rem;
+    color: var(--gris-50);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, .3),
+                -1rem -1rem 2rem rgba(255, 255, 255, .4);
+    cursor: pointer;
+  }
+  
+  .redes .icon-link:hover, .icon-link:focus {
+    box-shadow: inset 1rem 1rem 2rem rgba(0, 0, 0, .1),
+                inset -1rem -1rem 2rem rgba(255, 255, 255, .5);
+  }
+  
+  .redes .icon-link i {
+    margin: auto;
+  }
+  
+  @media screen and (min-width: 360px) {
+    .redes {
+      margin: auto;
+      width: 95%;
+    }
+  }

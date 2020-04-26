@@ -1,0 +1,25 @@
+:root {
+    /* Breakpoints */
+    --xs: 360px;
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+    --xl: 1200px;
+
+    /* Colors */
+    --rosa: #FF99BB; /* #FFD0DE; */
+    --dorado: #D0AD52;
+    --gris: #515A47;
+    --marron: #7A4419;
+    --oliva: #755C1B;
+    --crema: #EED39C;
+    --chocolate: #592300;
+
+    --rosa-50: #FF99BB77;
+    --dorado-50: #D0AD5277;
+    --gris-50: #515A4777;
+    --marron-50: #7A441977;
+    --oliva-50: #755C1B77;
+
+    --blanco: #FAFAFA;
+}

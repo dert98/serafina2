@@ -1,0 +1,98 @@
+/*-----------------------------------------
+      HOME
+-----------------------------------------*/
+
+.slider {
+    height: 100vh;
+    background-color: #FFF;
+  }
+  
+  .logo-slider {
+    font-family: 'Stay Classy SLDT';
+    position: absolute;
+    color: var(--dorado);
+    font-size: 12rem;
+    left: 50vw;
+    transform: translate(-50%,-5%);
+    z-index: 2;
+  }
+  
+  .slider .owl-dots {
+    position: absolute;
+    top: 50%;
+    right: 2em;
+    justify-content: center;
+  }
+  
+  .owl-theme .owl-dots .owl-dot {
+    display: block;
+  }
+  
+  .owl-theme .owl-dots .owl-dot span {
+    width: 12px;
+    height: 12px;
+    margin: 7px 10px;
+    border: 2px solid var(--dorado-50);
+    background: transparent;
+    display: block;
+    /* -webkit-backface-visibility: visible; */
+    transition: opacity 200ms ease;
+    border-radius: 30px;
+  }
+  
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: var(--rosa-50);
+    border-color: var(--dorado-50);
+  }
+  
+  .slider .caption {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    color: #fff;
+    cursor: e-resize;
+    padding: 4em 0 0 2em;
+  }
+  
+  .slider .item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .slider .item-first {
+    background-image: url(../img/slider1.png);
+  }
+  
+  .slider .item-second {
+    background-image: url(../img/slider2.png);
+  }
+  
+  .slider .item-third {
+    background-image: url(../img/slider3.png);
+  }
+  
+  .slider .item-second .section-btn {
+    background: #292929;
+  }
+  
+  .slider .item-second .section-btn:hover {
+    background: #ffffff;
+  }
+  
+  .slider .item-third .section-btn {
+    background: transparent;
+    border: 1px solid #ffffff;
+  }
+  
+  .slider .item-third .section-btn:hover,
+  .slider .item-third .section-btn:focus {
+    background: #ce3232;
+    border-color: transparent;
+    color: #ffffff;
+  }
+  

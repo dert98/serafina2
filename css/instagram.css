@@ -1,0 +1,106 @@
+/*-----------------------------------------
+      INSTAGRAM
+-----------------------------------------*/
+
+.instagram {
+    grid-area: instagram;
+  }
+  
+  /* Profile Section */
+  
+  .profile {
+    padding: 2rem 0;
+    text-align: left;
+    margin-left: 1rem;
+    /* color: #FFF; */
+  }
+  
+  .profile-insta {
+    font-size: 2.2rem;
+    font-weight: 300; 
+    margin-bottom: 1rem;   
+  }
+  
+  .profile-stats li {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+  
+  .profile-stat-count {
+    font-weight: 600;
+  }
+  
+  
+  /* gallerigram section */
+  
+  .gallerigram {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    margin: 0 2rem 2rem 2rem;
+  }
+  
+  .gallerigram-item {
+    position: relative;
+    grid-column: span 1;
+    color: var(--blanco);
+    cursor: pointer;
+  }
+  
+  .gallerigram-item-info {
+    display: none;
+  }
+  
+  .gallerigram-item:hover .gallerigram-item-info,
+  .gallerigram-item:focus .gallerigram-item-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.3);
+    border-radius: 1rem;
+  }
+  
+  .gallerigram-item-info li {
+    display: inline-block;
+    font-size: 2.1rem;
+    font-weight: 600;
+    transform: translateX(-2rem);
+  }
+  
+  .gallerigram-item-likes {
+    margin-right: 2.2rem;
+  }
+  
+  .gallerigram-item-type {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0.2rem 0.2rem 0.2rem rgba(0,0,0,.1);
+  }
+  
+  .fa-clone, .fa-comment {
+    transform: rotateY(180deg);
+  }
+  
+  .gallerigram-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  
+  /* Spinner Animation */
+  @keyframes loader {
+    to {
+        transform: rotate(360deg);
+    }
+  }
+  
